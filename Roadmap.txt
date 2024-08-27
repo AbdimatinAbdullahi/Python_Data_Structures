@@ -3,6 +3,7 @@
     Types of Data Structures: Overview of primitive vs. non-primitive data structures.
     Complexity Analysis: Basic understanding of time and space complexity.
 
+
 2. Basic Data Structures
     Arrays
     Single-dimensional arrays
@@ -14,6 +15,7 @@
     Circular linked list
     Operations: Insertion, deletion, traversal
 
+
 3.Stacks and Queues
     Stacks
         Concept and applications
@@ -24,6 +26,7 @@
         Types: Simple Queue, Circular Queue, Deque (Double-ended Queue)
         Implementation using arrays and linked lists
         Operations: Enqueue, dequeue, front, rear, isEmpty
+
 
 4. Trees
     Basic Trees
@@ -51,6 +54,7 @@
     Minimum Spanning Tree Algorithms
         Kruskal’s Algorithm
         Prim’s Algorithm
+
 
 6. Hashing
     Concepts

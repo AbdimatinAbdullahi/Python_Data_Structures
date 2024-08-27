@@ -59,8 +59,8 @@ class TreeNode:
             result.append(root.value)
             self.inorder_traversal_recursive(root.right, result)
         return result
-    
 
+    
 
     #Start root, left, right
     def preorder_traversal(self):
