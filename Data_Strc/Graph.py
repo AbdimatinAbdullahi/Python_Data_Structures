@@ -67,7 +67,7 @@ class matrix_graph:
             self.matrix[v][u] = 1
         self.matrix[u][v] = 1
     
-    def display_graph(self):
+    def display(self):
         for row in self.matrix:
             print(row)
 
@@ -78,4 +78,4 @@ grm.add_Edges(1, 2)
 grm.add_Edges(1, 3)
 grm.add_Edges(2, 4)
 grm.add_Edges(3, 4)
-grm.display_graph()
+grm.display()
