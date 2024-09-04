@@ -48,4 +48,34 @@ g.add_edge(1, 2)
 g.add_edge(1, 3)
 g.add_edge(2, 3)
 
-g.display()
+# g.display()
+
+
+
+
+#Graph Represantion using Adjacency Matrix
+class matrix_graph:
+    def __init__(self, num_nodes):
+        self.num_nodes = num_nodes
+        self.matrix = [[0] * num_nodes for _ in range(num_nodes)]
+    
+    def add_Edges(self, v, u, directed=False):
+
+        if u >= self.num_nodes or v >= self.num_nodes:
+            raise ValueError("Node index out of range")
+        if not directed:
+            self.matrix[v][u] = 1
+        self.matrix[u][v] = 1
+    
+    def display_graph(self):
+        for row in self.matrix:
+            print(row)
+
+grm = matrix_graph(5)
+grm.add_Edges(0, 1)
+grm.add_Edges(0, 2)
+grm.add_Edges(1, 2)
+grm.add_Edges(1, 3)
+grm.add_Edges(2, 4)
+grm.add_Edges(3, 4)
+grm.display_graph()
